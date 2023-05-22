@@ -1,0 +1,130 @@
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.card-form-widget {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+.cards-types {
+  display: flex;
+  gap: 5px;
+  padding: 10px 0;
+}
+
+.card-img {
+  position: relative;
+  width: 45px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.card-img.visa {
+  background-image: url("../img/Visa.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-img.master-card {
+  background-image: url("../img/MasterCard-ai.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-img.american-express {
+  background-image: url("../img/American-Express.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-img.discover {
+  background-image: url("../img/discover-curved-64px.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-img.jcb {
+  background-image: url("../img/jcb.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-img.diners-club {
+  background-image: url("../img/DinersClub.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-img.mir {
+  background-image: url("../img/mir.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-img.find-card-type {
+  outline: 4px solid rgba(7, 183, 80, 0.9);
+}
+
+.input {
+  width: 230px;
+  padding: 10px;
+  border: none;
+  border:1px solid darkgray;
+  border-radius: 4px;
+}
+
+.input:focus {
+  border: none;
+  outline: 1px solid cornflowerblue;
+  box-shadow: 0 0 10px rgba(73, 182, 245, 0.7);
+}
+
+.submit {
+  padding: 11px;
+  border: none;
+  border-radius: 4px;
+  background-color: green;
+  color: white;
+}
+
+.input-field {
+  position: relative;
+}
+
+.input-field.valid::before {
+  content: "Это действительно номер кредитной карты!";
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  color:rgb(15, 191, 15);
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.input-field.invalid::after {
+  content: "Это не номер кредитной карты!";
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  color:rgb(214, 17, 17);
+  font-family: sans-serif;
+  font-weight: 600;
+}
