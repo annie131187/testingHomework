@@ -119,7 +119,7 @@
   font-weight: 600;
 }
 
-.input-field.invalid::after {
+.input-field.invalid::before {
   content: "Это не номер кредитной карты!";
   position: absolute;
   bottom: -30px;

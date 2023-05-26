@@ -64,10 +64,15 @@ export default class cardNumberWidget {
     const cards = [...this.parentEl.querySelectorAll(".card-img")];
 
     const cardName = whatCardIssuer(value);
-    cards.filter((card) => {
-      const cardType = card.classList.contains(cardName);
-      cardType.classList.add("find-card-type");
-    });
+    for (let i = 0; i < cards.length; i++) {
+      if (value === "") {
+        cards[i].classList.remove("find-card-type");
+      }
+
+      if (cards[i].classList.contains(cardName)) {
+        cards[i].classList.add("find-card-type");
+      }
+    }
   }
 
   onSubmit(e) {
