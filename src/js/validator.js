@@ -1,4 +1,5 @@
 export function isValidCard(value) {
+  value = value.toString();
   let sum = 0;
   for (let i = 0; i < value.length; i++) {
     let digit = parseInt(value[i]);

@@ -6,6 +6,6 @@ test("card number should be true", () => {
 });
 
 test("card number should be false", () => {
-  const result = isValidCard(123456);
+  const result = isValidCard(4024007177115700);
   expect(result).toBeFalsy();
 });
